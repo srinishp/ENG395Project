@@ -1,0 +1,65 @@
+You have decided to go to the Wind Temple. 
+*image https://img.stablecog.com/insecure/1920w/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vMTNmZGZhM2MtZjc0Yy00OGM0LTkzZjItMGQ1N2JmNjIzNjljLmpwZWc.webp
+
+*page_break
+
+Welcome to the Wind Temple. After a long travel and fly, you have finally arrived at the Mountain of Wind. It appears peaceful, but if not conquered by you, the darkness from the Lord of the Underworld will get to it soon.  
+*image https://png.pngtree.com/thumb_back/fw800/background/20230815/pngtree-photo-of-clouds-in-an-area-above-a-mountain-image_13068633.jpg
+
+*page_break
+
+Now that you have arrived at the Mountain of Wind, you must defeat the guardian of the Wind Temple: the Garuda. The Garuda is commonly known as the half man, half eagle creature who can create tornados and wind gusts that can push you off the Mountain.
+*image https://img.freepik.com/premium-photo/garuda-has-body-person-back-bird-has-wings-deity-indian-buddhist-my_38841-511.jpg
+
+*page_break
+
+After a long time of searching, you finally encounter the Garuda. The creature realizes your intentions to conquer the Wind Temple, so as the guardian, it throws tornados at you and tries to chase you off the mountain.
+
+*label wind_fight
+
+What will you do to defeat the Garuda?
+*choice
+  #Dodge its attacks and use my weapon to reflect their attacks
+   As you attempt to dodge the Garuda and its tornado, you end up accidentally going off the cliff of the mountain! Try again.
+   *goto wind_fight
+  #Stay persistent and withstand the force of their attacks using your weapon for defense
+   The Garuda has sent you off the mountain with its tornado as you tried to stay stationary! Try again.
+   *goto wind_fight
+  #Attack it head on with your weapon without giving it a chance to recover
+   You run right into the Garuda and it simply carries you off the mountain and drops you to your demise! Try again.
+   *goto wind_fight
+  #Avoid its attacks by fleeing as it chases you until it gets tired for you to use your weapon
+   *set agility +25
+   *if agility = 50
+    You have chosen the correct combat style! Now choose a weapon that you can find in the Mountain of Wind you think is suitable for defeating the Garuda.
+
+    *label wind_combat
+
+    What weapon will you choose?
+    *choice
+     #Rocks
+      The rocks that you threw were useless since the Garuda just dodged them. Try again.
+      *goto wind_combat
+     #Mountain
+      *set agility +25
+      You ran all around the mountain avoiding its every attack as it continues to chase you. Once you realize that the creature is starting to become exhausted, you sprint towards the mountain peak with full speed as the Garuda chases you, and you move out the way, in the last minute, causing the Garuda to collide into the mountain peak.
+
+      Congratulations! You have successfully defeated the Garuda. As a result, you have conquered the Wind Temple and are granted this set of Shurikens of Tornadoes that will help you in the Underworld.
+      *image https://img1.yeggi.com/page_images_cache/8466648_ninjago-shurikens-of-ice-3d-printable-3d-printing-idea-to-download- 
+      *goto wind_end
+      *finish 
+     #Clouds
+      Well, there are clouds here but they are not fluffy for you to jump on nor violent for you to use them as a weapon. Try again.
+      *goto wind_combat
+    *finish
+
+*label wind_end
+*set eligibility +25
+*goto_scene startup journey
+
+
+
+
+
+
+

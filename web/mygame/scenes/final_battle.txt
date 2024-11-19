@@ -1,0 +1,87 @@
+*page_break
+You have successfully defeated Cerberus! However, all your weapons are now a part of nature, so you must rely solely on your physical abilities. 
+*image https://mythologysource.com/wp-content/uploads/2020/06/cerberus.png
+
+You hear the Lord of the Underworld, enraged, rushing towards you because you have defeated their guard dog. 
+
+*page_break
+
+As they rush towards you, I will give you some context on who the Lord of the Underworld is:
+
+Pluto was one of the Lords who were appointed with responsibilities in regulating different aspects of the world. Pluto was assigned the task of maintaining the Underworld and was in charge of controlling the evil that has once took place in the world. However, as years passed, Pluto became consumed by the darkness that existed in the Underworld and instead of controlling it, it began to control them. As a result, they decided to conquer the world and spread their influence, filling they world with eternal void. 
+*image https://r2.starryai.com/results/1030549357/54e016fa-aa8c-418f-a501-b595a4ece43e.webp
+
+Now it is up to you to strategically defeat Pluto!
+
+*page_break
+
+Pluto finally arrives and as the void consumed them, over the years, they began to develop a menacing and destructive appearance. It is almost as if it is impossible to defeat them. No wonder why so many soldiers and warriors have passed in an attempt to defeat them. 
+
+*image https://c4.wallpaperflare.com/wallpaper/980/567/596/fire-the-demon-warrior-horns-wallpaper-preview.jpg
+
+*page_break
+
+However, you must not back down. Pluto realizes that you do not have any weapons and decides to give you an offer: 
+*choice
+  #Surrender to them in return for your life and you shall be enslaved by them for the rest of your life
+   *goto_scene victory surrender
+  #Continue with your mission and challenge them to a duel without any weapons and with the risk of losing your life
+   *goto battle
+   *finish
+
+*label battle
+You have decided to challenge Pluto to a duel. However, since you have no weapons you must use the moves that you have learned from battling the guardians of the four nations. Keep in mind: You are not worthless without your weapons, and you are capable of anything as long as you have the skill and faith to help you. You must go through a specific combination of combat moves to successfully defeat Pluto. 
+*image https://img.freepik.com/premium-photo/medieval-knight-with-his-sword-leapt-into-fight-against-giant-digital-art-style-illustration-painting_37402-418.jpg
+*label battle_continue
+To guide you, the Scrolls of Wisdom have left you a hint: Tornadoes may push you back, and Hurricanes may drown you, but as long as you stay Grounded in your beliefs and values, you shall harness your inner Flame.
+
+What combat move do you choose to execute?
+*choice
+  #Dodge their attacks and reflect their strikes back at them 
+   *if pluto_life = 75
+    You have successfully dodged their attack and struck them with the same amount of force, injuring them.
+
+    *set pluto_life -25
+    *goto battle_continue
+   *else
+    You've tried dodging Pluto's attacks but they were much stronger and agile than you thought. They stuck you instead without giving you time to retaliate. You died. 
+ 
+    *goto_scene victory death
+  #Stand your ground and shield yourself with your arms as Pluto continues to attack you. 
+   *if pluto_life = 50
+    By allowing them to attack continuously as you guard yourself from any damage. Pluto becomes extremely exhausted, struggling to make a move.
+
+    *set pluto_life -25
+    *goto battle_continue
+   *else
+    You realized that you aren't made out of iron to withstand the powerful attacks of Pluto. You died.
+
+    *goto_scene victory death
+  #Strike Pluto with full force. 
+   *if pluto_life = 25
+    As Pluto becomes exhausted from the previous combat moves you have executed, you make use of the great opportunity to consecutively attack Pluto without giving it a chances to recover at all.
+ 
+    *set pluto_life -25
+    *goto_scene victory win
+   *else
+    You ran straight towards a powerful entity with full force. What did you expect? You died.
+
+    *goto_scene victory death
+  #Run away as Pluto chases you and dodge all their attack
+   *if pluto_life = 100
+    You have avoided any damage to yourself, and you caused some sort of exhaustion in Pluto, causing him to move slower.
+
+    *set pluto_life -25
+    *goto battle_continue
+   *else
+    You have given Pluto enough time to understand your movements and recover, ultimately, allowing them to successfully attack you. You died.
+
+    *goto_scene victory death
+
+
+
+
+
+
+
+

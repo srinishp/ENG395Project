@@ -1,0 +1,66 @@
+You have decided to go to the Water Village. 
+*image https://img.freepik.com/premium-photo/knight-with-shiny-armour-walking-through-water-sun-reflection-water-splashing-epic_961179-2606.jpg
+
+*page_break
+
+Welcome to the Water Village. After a long travel and swim, you have finally arrived at the Island of Water. It appears peaceful, but if not conquered by you, the darkness from the Lord of the Underworld will get to it soon.  
+*image https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/f8/cb/8c/water-island.jpg?w=1200&h=1200&s=1
+
+*page_break
+
+Now that you have arrived at the Island of Water, you must defeat the guardian of the Water Village: the Leviathan. The Leviathan is commonly known as the sea monster of the waters that dictates the tides. It can generate hurricanes and whirlpools to destroy its enemies. 
+*image https://i0.wp.com/darktemples.com/wp-content/uploads/2024/03/DALL·E-2024-03-04-21.47.38-Illustrate-a-depiction-of-Leviathan-from-mythological-lore-as-a-titanic-creature-of-the-sea.-The-design-should-reflect-Leviathan-as-a-mammoth-beast-i.jpg?fit=1024%2C585&ssl=1
+
+*page_break
+
+After a long time of searching, you finally encounter the Leviathan. The sea monster realizes your intentions to conquer the Water Village, so as the guardian, it throws hurricanes at you and tries to drown you into its whirlpool.
+
+*label water_fight
+
+What will you do to defeat the Leviathan?
+*choice
+  #Dodge its attacks and use my weapon to reflect their attacks
+   *set adaptability +25
+   *if adaptability = 50
+    You have chosen the correct combat style! Now choose a weapon that you can find in the Island of Water you think is suitable for defeating the Leviathan.
+
+    *label water_combat
+
+    What weapon will you choose?
+    *choice
+     #Shells
+      The shells that you used were useless in combat. Try again.
+      *goto water_combat
+     #Seaweed
+      *set adaptability +25
+      You used the seaweed that you found in the ocean as a whiplash that would help you avoid the attacks of the Leviathan and attack it back when it was vulnerable.
+
+      Congratulations! You have successfully defeated the Leviathan. As a result, you have conquered the Water Village and are granted this Whiplash of Rivers that will help you in the Underworld.
+      *image https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/67d52d86-8cd3-41bf-93d9-1039998d2371/dbeskjm-a0ae65b7-0459-4f1d-9b69-79a878b023cf.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY3ZDUyZDg2LThjZDMtNDFiZi05M2Q5LTEwMzk5OThkMjM3MVwvZGJlc2tqbS1hMGFlNjViNy0wNDU5LTRmMWQtOWI2OS03OWE4NzhiMDIzY2YucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aR3HUIfPQKTzqGf3PYXjKHBVqWcNekr4ge3nXa0EvJc
+      *goto water_end
+      *finish 
+     #Sand
+      The sand wasn't effective in becoming a weapon in the first place. Try again.
+      *goto water_combat
+   *finish
+  #Stay persistent and withstand the force of their attacks using your weapon for defense
+   The Leviathan has drowned you into the whirlpool as you tried to withstand its attacks! Try again.
+   *goto water_fight
+  #Attack it head on with your weapon without giving it a chance to recover
+   The Leviathan has simply eaten you as you try to attack it with full force! Try again.
+   *goto water_fight
+  #Avoid its attacks by fleeing as it chases you until it gets tired for you to use your weapon
+   The Leviathan is much faster than you thought. It catches up to you and knocks you out! Try again.
+   *goto water_fight
+   *finish
+
+*label water_end
+*set eligibility +25
+*goto_scene startup journey
+
+
+
+
+
+
+

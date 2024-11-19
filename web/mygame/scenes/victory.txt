@@ -1,0 +1,45 @@
+*label surrender
+You sold your bravery and courage for a life of enslavement under Pluto.
+*image https://cdn.gathertales.com/images/stories/main/e2618839-1e33-4f23-b3be-ef3643308347.webp
+*ending
+
+
+*label death
+You are here because you died and are now a soul imprisoned in the Underworld.
+*image https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/81d4b1f2-15dc-41e0-96ac-3a68fefed7db/dem1re-2ba3e2ec-10df-4997-9615-8d043426e194.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgxZDRiMWYyLTE1ZGMtNDFlMC05NmFjLTNhNjhmZWZlZDdkYlwvZGVtMXJlLTJiYTNlMmVjLTEwZGYtNDk5Ny05NjE1LThkMDQzNDI2ZTE5NC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.r3pwlELU0B33C5LdOyST7KYOFp25P7ApkKQYS4bvksc
+However, as a soul imprisoned in the Underworld, you can choose to regain your life by defeating Pluto through a rematch!
+
+Choose to give up and remain as a lost soul or challenge Pluto to a rematch?
+*choice 
+  #Rematch
+   *goto_scene final_battle battle
+  #Give Up
+   *ending
+
+
+
+*label win
+You have successfully conquered Pluto and the Underworld.
+*image https://cdnb.artstation.com/p/assets/images/images/001/460/625/medium/renan-moraes-cards-22.jpg?1446813094
+
+*page_break
+Now you are faced with the choice of standing by your morals and completing your mission to save the world by spreading light across the world or you can choose to crown yourself Ivan the Lord of the Underworld and spread darkness to the rest of the world under your control. It is up to you.
+*choice 
+  #Save the world
+   *goto light
+  #Conquer the world
+   *goto dark
+
+
+
+*label light
+You have chosen to save the world. You are now titled Ivan, the Savior of the World!
+*image https://r2.starryai.com/results/114037231/cffbe797-1719-4391-9326-8abe798ba9f9.webp
+From now on, you shall protect this world from any dangers that follow.
+*ending
+
+*label dark
+You have chosen to conquer the world. You are now titled Ivan, the Conqueror of the World!
+*image https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/706f7ff0-a28a-4a69-a54d-34476615f79d/dgac89a-f62126a8-f90f-43c5-af61-9c05e800c596.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcwNmY3ZmYwLWEyOGEtNGE2OS1hNTRkLTM0NDc2NjE1Zjc5ZFwvZGdhYzg5YS1mNjIxMjZhOC1mOTBmLTQzYzUtYWY2MS05YzA1ZTgwMGM1OTYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4UMn6Sko09nwFnwcMU6lymmeeidIODz5kf0ekuXIIc4
+From now on, you shall continue to expand your darkness to the world, but with the fear that some savior will come to overthrow you in the proceeding years.
+*ending

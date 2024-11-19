@@ -1,0 +1,59 @@
+You have decided to go to the Earth Nation. 
+*image https://img.freepik.com/premium-photo/walking-knight-armor-background-ruins-old-landscape_124507-209782.jpg
+
+*page_break
+
+Welcome to the Earth Nation. After a long travel and walk, you have finally arrived at the Jungle of Earth. It appears peaceful, but if not conquered by you, the darkness from the Lord of the Underworld will get to it soon.  
+*image https://m.media-amazon.com/images/I/71j2Gz5SInL.jpg
+
+*page_break
+
+Now that you have arrived at the Jungle of Earth, you must defeat the guardian of the Earth Nation: the Minotaur. The Minotaur is commonly known as the part bull, part man demon of the earth, whose strength must not be tested. Just note that once you come in contact with its horns, you are done for.
+*image https://images.playground.com/04e3a597e7e943d5b7414318fae24cd9.jpeg
+
+*page_break
+
+After a long time of searching, you finally encounter the Minotaur. The demon realizes your intentions to conquer the Earth Nation, so as the guardian, it rages at you with its horns and tries to hammer you down.
+
+*label earth_fight
+
+What will you do to defeat the Minotaur?
+*choice
+  #Dodge its attacks and use my weapon to reflect their attacks
+   You really thought you would be able to dodge the Minotaur's raging attacks? Try again.
+   *goto earth_fight
+  #Stay persistent and withstand the force of their attacks using your weapon for defense
+   *set resilience +25
+   *if resilience = 50
+    You have chosen the correct combat style! Yes, coming in contact with the demon is risky but using your weapon as a shield as it rages at you until it gets tired is smart. You must now choose a weapon from the Jungle of Earth.
+
+    *label earth_combat
+
+    What weapon will you choose?
+    *choice
+     #Rocks
+      The rocks are too small to work as a shield. Try again.
+      *goto earth_combat
+     #Vines
+      These vines that you used as a shield are too flimsy and can easily be broken by the Minotaur. Try again.
+      *goto earth_combat
+     #Tree Trunks
+      *set resilience +25
+      You used the tree trunks to form a strong solid shield that would withstand the enraged attacks of the Minotaur. As it continues to attack and attack, it loses its power. Eventually, it ends up falling down due to exhaustion. You take this opportunity to slay the Minotaur.
+
+      Congratulations! You have successfully defeated the Minotaur. As a result, you have conquered the Earth Nation and are granted this Mace of Boulders that will help you in the Underworld.
+      *image https://wiki.guildwars2.com/images/3/3f/Deldrimor_Mace_concept_art.jpg
+      *goto earth_end
+   *finish 
+  #Attack it head on with your weapon without giving it a chance to recover
+   You ran straight into the deadly horns at full speed! Try again.
+   *goto earth_fight
+  #Avoid its attacks by fleeing as it is chasing you until it gets tired for you to use your weapon
+   The more you try running away from it, the angrier it gets, and the angrier it gets the faster it'll get! Try again.
+   *goto earth_fight
+   *finish
+
+*label earth_end
+*set eligibility +25
+*goto_scene startup journey
+

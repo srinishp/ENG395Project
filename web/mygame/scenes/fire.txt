@@ -1,0 +1,61 @@
+You have decided to go to the Fire Kingdom. 
+*image https://neural.love/cdn/thumbnails/1ee6466a-a169-6ada-9c48-f58424119368/bf5e4633-6feb-515f-943f-1ed827ce3cf6.webp?Expires=1767225599&Signature=KiKfb9HoqpBUivrNNS4LO6bKzetYE0aRg4jKbCrtPvllIuB-L~joD7o2PAqemxAf2WvtxFbh1oYDjKLcKzqaiVEoPFOkUR6LqgH5Q-6qwRUh1bDojogQignZTtmFpFH99UtHar4fk20c12097iJNNPF6d~6uPF8x~XLEdYd0OMfXLhckDEBc7JKV82sNgGtz-KdnmvAigpUgqyQq6BTq-g4b6L6Vwh9O0Z-YiyXCvi6P9IEGf91gqW57o2MmfBoPFFr-EFkP6OyCglFmGqqfD-5qYauq91jiLX2GMKc8h-QHqKbgpfPxwY~gvABd8eFr3Ny3Fj7VIFdXhxBOflYRYQ__&Key-Pair-Id=K2RFTOXRBNSROX
+
+*page_break
+
+Welcome to the Fire Kingdom. After a long travel and climb, you have finally arrived at the Volcano of Fire. It appears peaceful, but if not conquered by you, the darkness from the Lord of the Underworld will get to it soon.  
+*image https://www.globalrescue.com/grcom/grmkt_resources/images/Media-blog-images/volcano-scaled.jpg
+
+*page_break
+
+Now that you have arrived at the Volcano of Fire, you must defeat the guardian of the Fire Kingdom: the Chimera. The Chimera is commonly known as the fire-breathing lion that has additional heads of a serpent and goat. This monster's fiery breath and aggressive nature is guaranteed to leave you scorched.
+*image https://arsgoetiademons.com/cdn/shop/articles/chimera_8cca18d2-befc-420f-a9f7-5c4d224229b4.png?v=1727707885
+
+*page_break
+
+After a long time of searching, you finally encounter the Chimera. The monster realizes your intentions to conquer the Fire Kingdom, so as the guardian, it attacks you with its fire as it is heading at you.
+
+*label fire_fight
+
+What will you do to defeat the Chimera?
+*choice
+  #Dodge its attacks and use my weapon to reflect their attacks
+   You can dodge something with direction, but if it is fire, it is bound to get everywhere! Try again.
+   *goto fire_fight
+  #Stay persistent and withstand the force of their attacks using your weapon for defense
+   You are only asking for an invitation to get toasted! Try again.
+   *goto fire_fight 
+  #Attack it head on with your weapon without giving it a chance to recover
+   *set aggression +25
+   *if aggression = 50
+    You have chosen the correct combat style! Yes, attacking the monster directly could be a bad idea, but as long as you are using your weapon and exerting constant force at it from a distance, you should be able to defeat the Chimera. You must now choose a weapon found in the Volcano of Fire.
+
+    *label fire_combat
+
+    What weapon will you choose?
+    *choice
+     #Rocks ignited with fire
+      *set aggression +25
+      You collected the rocks that were found nearby and used the lava to set it on fire. Then, you propelled these fired rocks at the Chimera constantly without giving it any time to recover. As you were aggressively launching these rocks, the Chimera began to be set on fire, since although it can breathe fire, it cannot withstand coming in contact with it externally.
+
+      Congratulations! You have successfully defeated the Chimera. As a result, you have conquered the Fire Kingdom and are granted this Bow and Arrow of Flames that will help you in the Underworld.
+      *image https://t3.ftcdn.net/jpg/09/37/92/70/360_F_937927053_g5wkLxvEYnyBFTWxK3yEY6eViLnIOlFK.jpg
+      *goto fire_end
+      *finish
+     #Soot
+      What is that supposed to do? Blind the Chimera? Try again.
+      *goto fire_combat
+     #Fire
+      Did you forget that you aren't fireproof yet? Try again.
+      *goto fire_combat
+   *finish
+
+  #Avoid its attacks by fleeing as it is chasing you until it gets tired for you to use your weapon
+   As you try running away from it, the heat and smoke from the fire began to suffocate you, causing you to drop! Try again.
+   *goto fire_fight
+
+
+*label fire_end
+*set eligibility +25
+*goto_scene startup journey
+

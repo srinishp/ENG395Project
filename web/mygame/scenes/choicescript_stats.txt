@@ -1,0 +1,18 @@
+These are your stats!
+
+Adaptability is your ability to make use of your environment including attacks and reflect it back to the attacker. This trait belongs to the Water Village. 
+
+Resilience is your ability to withstand attacks and external forces. This trait belongs to the Earth Nation. 
+
+Aggression is your ability to harness your inner light and consistently exert it on external beings. This trait belongs to the Fire Kingdom.
+
+Agility is your ability to dodge and evade any targeted attacks in an attempt to tire out the attacker. This trait belongs to the Wind Temple. 
+
+Eligibility determines your ability to move on to the final battle in the underworld.
+
+*stat_chart
+  percent Adaptability
+  percent Resilience
+  percent Aggression
+  percent Agility
+  percent Eligibility

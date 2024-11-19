@@ -1,0 +1,107 @@
+You are finally eligible to go to the Underworld for your final battle.  
+*image https://cdn.openart.ai/published/user_2imjzyC73vh7i5Majb5ANS1QMQv/2HtRIniM_OKPM_1024.webp
+
+*page_break
+
+You finally arrive at the Underworld. It is dark and full of void, displaying an eerie feeling. This is what the Lord of the Underworld intends on making the rest of the world look like. Now that we are here, we must find them and defeat them to prevent their destruction.
+*image https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c875a1d6-4335-4773-9e9d-50934530c690/dghz035-615c0bc3-a113-4fba-adac-aa8929582a29.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M4NzVhMWQ2LTQzMzUtNDc3My05ZTlkLTUwOTM0NTMwYzY5MFwvZGdoejAzNS02MTVjMGJjMy1hMTEzLTRmYmEtYWRhYy1hYTg5Mjk1ODJhMjkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SSJOF_jKCGZe6ZVI0x7YRGtExqmix-z9am-0xPtarPE
+
+*page_break
+
+As you search for them, a wild creature, a three-headed demon-wolf appears from the void with a taste for carnage. This is Cerberus, the guard hound of the Underworld. You must first defeat it to get to the Lord of the Underworld. 
+*image https://image.jimcdn.com/app/cms/image/transf/dimension=1040x10000:format=jpg/path/s2217cd0bb1220415/image/iaa60dec7a02becd5/version/1725059894/cerberus.jpg
+
+*page_break
+
+Remember the weapons that you were granted from the four nations after slaying their respective guardians? Now you may use them to defeat Cerberus. Furthermore, you may have to use multiple weapons. However, keep in mind that using a weapon on Cerberus will drain it of its complete energy, causing it to disappear after inflicting damage on Cerberus.  
+*label dog_fight
+
+What will you do to defeat Cerberus?
+*choice
+  #Use the Whiplash of Rivers
+   *if adaptability = 75
+    *set adaptability +25
+    *set dog_life -25
+    You use the Whiplash of Rivers to significantly leave water scars on this beast, inflicting 25% damage. 
+    *image https://i.namu.wiki/i/_TgmQE2f2KbMNTau24xMtzg84F8uwlMNMV3Zfhxi34mTyEw5rFt_zU38j8mrUrQ3mjFz3a1BFtnuPvmED6sKtA.webp
+    Your Whiplash of Rivers now evaporates away.
+
+
+    *if dog_life = 0
+     *goto_scene final_battle
+     *finish
+
+    *goto dog_fight
+    *finish
+   *else
+    Your whiplash has evaporated. Use the other available weapons that can inflict damage.
+
+    *goto dog_fight
+    *finish
+  #Use the Mace of Boulders
+   *if resilience = 75
+    *set resilience +25
+    *set dog_life -25
+    You use the Mace of Boulders to significantly bruise this beast with rocks and other materials found in the terrain, inflicting 25% damage. 
+    *image https://artfiles.alphacoders.com/425/42578.jpg
+    Your Mace of Boulders now erodes into grains of rock.
+
+
+    *if dog_life = 0
+     *goto_scene final_battle
+     *finish
+
+    *goto dog_fight
+    *finish
+   *else
+    Your mace has eroded. Use the other available weapons that can inflict damage.
+
+    *goto dog_fight
+    *finish
+  #Use the Bow and Arrow of Flames
+   *if aggression = 75
+    *set aggression +25
+    *set dog_life -25
+    You use the Bow and Arrow of Flames to significantly burn this beast with your flaming arrows, inflicting 25% damage. 
+    *image https://i.pinimg.com/originals/0f/06/c5/0f06c5c71ae2bb9a6f6d767790285a10.jpg
+    Your Bow and Arrow of Flames now incinerates into ash.
+
+
+    *if dog_life = 0
+     *goto_scene final_battle
+     *finish
+
+    *goto dog_fight
+    *finish
+   *else
+    Your bow and arrows have incinerated. Use the other available weapons that can inflict damage.
+
+    *goto dog_fight
+    *finish
+  #Use the Shurikens of Tornadoes
+   *if agility = 75
+    *set agility +25
+    *set dog_life -25
+    You use the Shurikens of Tornados to significantly scar the beast, as well as, generate tornadoes that leave it unconscious, inflicting 25% damage. 
+    *image https://thumbs.dreamstime.com/b/cinematic-black-ninja-throwing-shuriken-anime-style-ai-generated-321971602.jpg
+    Your Shurikens of Tornadoes now disintegrates into the air around you.
+
+
+    *if dog_life = 0
+     *goto_scene final_battle
+     *finish
+
+    *goto dog_fight
+    *finish
+   *else
+    Your shurikens have disintegrated. Use the other available weapons that can inflict damage.
+
+    *goto dog_fight
+    *finish
+
+
+
+
+
+
+

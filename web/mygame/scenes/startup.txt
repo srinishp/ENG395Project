@@ -1,0 +1,93 @@
+
+*title Ivan, the Conqueror
+*author Srinish Pellakur
+*scene_list
+  startup
+  water
+  earth
+  fire
+  wind
+  underworld
+  final_battle
+  victory
+
+*create adaptability 25
+*create resilience 25
+*create aggression 25
+*create agility 25
+*create eligibility 0
+*create dog_life 100
+*create pluto_life 100
+Disclaimer: The images used for this game are from the internet and linked in the source code.
+
+Welcome Screen-Watchers from the future, this is 200 B.C. Currently, we are undergoing a global catastrophe. 
+*image https://img.freepik.com/premium-photo/destruction-earth-from-space-dark-damage_853677-74397.jpg
+Enter "Next" to find out more about it.
+*page_break
+
+The Lord of the Underworld has been consumed in the darkness that they were left in for the past million years, and they have decided to conquer the entire world. As everyone seeks ways of escaping, the Lord continues to destroy all means of evasion and plans on taking control of the entire world. 
+*image https://cdn.pixabay.com/photo/2023/12/23/16/12/dark-8465890_640.jpg
+
+*page_break
+
+In an attempt to fight the Lord, many warriors and soldiers have lost their lives. It almost seems as if this destruction is inevitable. However, the Scrolls of Wisdom have pointed to one savior that will save us all. This individual shall defeat the Lord in the final battle. However, prior to doing so, they shall travel across the four nations to collect as much wisdom and skills to be strong enough to fight and defeat the Lord. These nations are the Water Village, Earth Nation, Fire Kingdom, and Wind Temple. 
+*image https://victorylifeministriesinternational.org/wp-content/uploads/2024/04/34847-spiritual-warfare_source_file-768x404.jpg 
+
+*page_break
+
+The Scrolls of Wisdom glow when pointed to the savior that is predetermined by fate. In desperate measures, the people have pointed the scrolls to each and every member that is able to engage in combat. After ongoing attempts of trying to identify the savior, the scrolls pointed to the one person who was destined by fate: Ivan, an orphan blacksmith. At first, it was a surprise, since Ivan is a scrawny individual who appears to be incapable of combat. However, as dictated by the scrolls, Ivan must now take on the journey of collecting wisdom and skills to conquer the Lord of the Underworld. 
+*image https://img.freepik.com/premium-vector/scared-cartoon-knight-illustration_1120558-28065.jpg?w=1800
+
+It is your mission to help Ivan make his decisions and successfully conquer the Lord of the Underworld and save the world. Enter "Next" if you are ready to go on this journey alongside Ivan.
+
+*page_break
+
+*label journey
+Where do you want to go to in your journey?
+*choice
+  #The Island of Water in the Water Village
+   *if adaptability < 50
+    *goto_scene water
+    *finish
+   *else
+    You already conquered the Water Village!
+
+    *goto journey
+    *finish
+  #The Jungle of Earth in the Earth Nation
+   *if resilience < 50
+    *goto_scene earth
+    *finish
+   *else
+    You already conquered the Earth Nation!
+
+    *goto journey
+    *finish
+  #The Volcano of Fire in the Fire Kingdom
+   *if aggression < 50
+    *goto_scene fire
+    *finish
+   *else
+    You already conquered the Fire Kingdom!
+
+    *goto journey
+    *finish
+  #The Mountains of Wind in the Wind Temple
+   *if agility < 50
+    *goto_scene wind
+    *finish
+   *else
+    You already conquered the Wind Temple!
+
+    *goto journey
+    *finish
+  #Enter the Underworld for the Final Battle
+   *if eligibility = 100
+    *goto_scene underworld
+    *finish
+   *else
+    You are not ready to fight the Lord of the Underworld. Complete your journey in the other nations to increase your skillset and wisdom.
+
+    *goto journey
+    *finish
+   *finish
